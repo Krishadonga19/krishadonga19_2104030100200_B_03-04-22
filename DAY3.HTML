@@ -1,0 +1,33 @@
+
+<!DOCTYpe html>
+<html>
+
+<head>
+    <title> jQuery ready() function </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: bisque;
+        }
+        .ready{
+         text-align: center;   
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#p1").css({ "font-size": "35px", "color": "lightyellow", "background": "orange", "fontWeight": "bolder" });
+                $("#p2").css({ "fontSize": "20px", "fontWeight": "bolder", "color": "blue" });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="ready">
+        <p id="p1"> Welcome to the World </p>
+        <p id="p2"> Example of  $(document).ready() function. </p>
+        <button> Click here</button>
+    </div>
+</body>
+
+</html>
